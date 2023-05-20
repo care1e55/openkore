@@ -86,7 +86,7 @@ ai_items_take_end 1.2
 
 # When standing near an item, send the 'take' packet every x seconds until
 # the item has been taken.
-ai_take .4
+ai_take .1
 
 # Give up if unable to pickup item after x seconds
 ai_take_giveup 3
@@ -208,3 +208,4 @@ patchserver 120
 
 # Time to wait before load map in xKore mode
 ai_clientSuspend 10
+vendingLog_request 5

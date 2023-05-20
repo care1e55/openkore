@@ -35,6 +35,10 @@ moc_para01 10000
 prt_maze01 10000
 
 # Avoid trying to route through prt_fild08a (which may not even exist) unless required to do so.
-prt_fild08a 10000
+pay_fild07 10000
+gl_cas02 10000
+gl_chyard 10000
+gl_knt01 10000
+gl_step 10000
 
 # Add your map weights here. Format: <mapname> <weight>

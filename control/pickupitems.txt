@@ -8,6 +8,718 @@
 #		 2 to take the item as fast as it can
 #
 #Use the item name "all" to tell kore to pickup or not pickup all items by default
-all 1
-# jellopy 0
-# fluff 0
+
+all 2
+
+Old Blue Box 2
+Old Purple Box 2
+Card Album 2
+Gift Box 2
+
+Oridecon 2
+Elunium 2
+Rough Elunium 2
+Rough Oridecon 2
+
+Wind of Verdure 2
+Mystic Frozen 2
+Crystal Blue 2
+Aquamarine 2
+Flame Heart 2
+
+
+Steel 2
+Coal 2
+Trunk 2
+
+Wind of Verdure 2
+Star Dust 2
+Great Nature 2
+
+Authoritative Badge 2
+
+# quest
+Nine Tails 2
+Skirt of Virgin 2
+
+Mastela Fruit 2
+Anodyne 2
+Trunk 2
+Broken Shell (0.45%)
+
+
+"Bow [4]" 2
+"Great Bow [3]" 2
+"Jur [3]" 2
+"Goggles [1]" 2
+"Gladius [3]" 2
+"Buckler [1]" 2
+"Saint's Robe [1]" 2
+"Shield [1]" 2
+"Trident [2]" 2
+"Gladius [3]" 2
+"Stiletto [3]" 2
+
+
+Safety Helmet 2
+Elven Ears 2
+Apple of Archer 2
+Gangster Mask 2
+Emperium 2
+"Matyr's Leash" 2
+Fin Helm 2
+Wig 2
+Gas Mask 2
+Nurse Cap 2
+
+
+
+Grape 2
+Anodyne 2
+
+Blue Herb 2
+Karvodailnirol 2
+Witherless Rose 2
+Blue Gemstone 2
+Detrimindexta 2
+Panacea 2
+
+
+Poring Card 2
+Fabre Card 2
+Pupa Card 2
+Drops Card 2
+Santa Poring Card 2
+Lunatic Card 2
+Pecopeco Egg Card 2
+Picky Card 2
+Chonchon Card 2
+Willow Card 2
+Picky Egg Card 2
+Thiefbug Egg Card 2
+Andre Egg Card 2
+Roda Frog Card 2
+Condor Card 2
+Thief Bug Card 2
+Savage Bebe Card 2
+Andre Larva Card 2
+Hornet Card 2
+Familiar Card 2
+Rocker Card 2
+Spore Card 2
+Baby Desertwolf Card 2
+Plankton Card 2
+Skeleton Card 2
+Female Thiefbug Card 2
+Kukre Card 2
+Tarou Card 2
+Wolf Card 2
+Mandragora Card 2
+Pecopeco Card 2
+Ambernite Card 2
+PoPoring Card 2
+Wormtail Card 2
+Hydra Card 2
+Muka Card 2
+Snake Card 2
+Zombie Card 2
+Stainer Card 2
+Creamy Card 2
+Coco Card 2
+Steel Chonchon Card 2
+Andre Card 2
+Smokie Card 2
+Horn Card 2
+Martin Card 2
+Ghostring Card 2
+Poison Spore Card 2
+Vadon Card 2
+Male Thiefbug Card 2
+Yoyo Card 2
+Elder Willow Card 2
+Vitata Card 2
+Angelring Card 2
+Marina Card 2
+Dustiness Card 2
+Metaller Card 2
+Thara Frog Card 2
+Soldier Andre Card 2
+Goblin Card 2
+Cornutus Card 2
+Anacondaq Card 2
+Caramel Card 2
+Zerom Card 2
+Kaho Card 2
+Orc Warrior Card 2
+Megalodon Card 2
+Scorpion Card 2
+Drainliar Card 2
+Eggyra Card 2
+Orc Zombie Card 2
+Golem Card 2
+Pirate Skel Card 2
+Bigfoot Card 2
+Argos Card 2
+Magnolia Card 2
+Phen Card 2
+Savage Card 2
+Mantis Card 2
+Flora Card 2
+Hode Card 2
+Desert Wolf Card 2
+Rafflesia Card 2
+Marine Sphere Card 2
+Orc Skeleton Card 2
+Soldier Skeleton Card 2
+Giearth Card 2
+rilldora Card 2
+Swordfish Card 2
+Munak Card 2
+Kobold Card 2
+Skel Worker Card 2
+Obeaune Card 2
+Archer Skeleton Card 2
+Mars Card 2
+Zenorc Card 2
+Matyr Card 2
+Dokkaebi Card 2
+Pasana Card 2
+Sohee Card 2
+Sandman Card 2
+Whisper Card 2
+Horong Card 2
+Requiem Card 2
+Marc Card 2
+Mummy Card 2
+Verit Card 2
+Mist Card 2
+Jakk Card 2
+Ghoul Card 2
+Strouf Card 2
+Marduk Card 2
+Marionette Card 2
+Argiope Card 2
+Hunter Fly Card 2
+Isis Card 2
+Sidewinder Card 2
+Petite Card 2
+Bathory Card 2
+Petite Card 2
+Phreeoni Card 2
+Deviruchi Card 2
+Eddga Card 2
+Medusa Card 2
+Deviace Card 2
+Minorous Card 2
+Nightmare Card 2
+Golden Thiefbug Card 2
+Bapho Jr. Card 2
+Scorpion King Card 2
+Moonlight Flower Card 2
+Mistress Card 2
+Raydric Card 2
+Dracula Card 2
+Orc Lord Card 2
+Khalitzburg Card 2
+Drake Card 2
+Anubis Card 2
+Joker Card 2
+Abysmal Knight Card 2
+Evil Druid Card 2
+Doppelganger Card 2
+Orc Hero Card 2
+Osiris Card 2
+Berzebub Card 2
+Maya Card 2
+Baphomet Card 2
+Pharaoh Card 2
+Gargoyle Card 2
+Goat Card 2
+Gajomart Card 2
+Galapago Card 2
+Crab Card 2
+Rice Cake Boy Card 2
+Goblin Leader Card 2
+Steam Goblin Card 2
+Goblin Archer Card 2
+Sky Deleter Card 2
+Nine Tail Card 2
+Ancient Firelock Card 2
+Grand Peco Card 2
+Grizzly Card 2
+Gryphon Card 2
+Gullinbursti Card 2
+Gig Card 2
+Nightmare Terror Card 2
+Nereid Card 2
+Dark Lord Card 2
+Dark Illusion Card 2
+Dark Frame Card 2
+Dark Priest Card 2
+The Paper Card 2
+Demon Fungus Card 2
+Deviling Card 2
+Poison Toad Card 2
+Dullahan Card 2
+Dryad Card 2
+Dragon Tail Card 2
+Dragon Fly Card 2
+Driller Card 2
+Disguise Card 2
+Diabolic Card 2
+Vagabond Wolf Card 2
+Lava Golem Card 2
+Rideword Card 2
+Raggler Card 2
+Raydric Archer Card 2
+Leib Olmai Card 2
+Wraith Dead Card 2
+Wraith Card 2
+Loli Ruri Card 2
+Rotar Zairo Card 2
+Lude Card 2
+Rybio Card 2
+Leaf Cat Card 2
+Marin Card 2
+Mastering Card 2
+Maya_Purple Card 2
+Merman Card 2
+Megalith Card 2
+Majoruros Card 2
+Civil Servant Card 2
+Mutant Dragon Card 2
+Mini Demon Card 2
+Mimic Card 2
+Myst Case Card 2
+Mysteltainn Card 2
+Miyabi Ningyo Card 2
+Violy Card 2
+Wander Man Card 2
+Vocal Card 2
+Bongun Card 2
+Brilight Card 2
+Bloody Murderer Card 2
+Blazzer Card 2
+Sasquatch Card 2
+Live Peach Tree Card 2
+Succubus Card 2
+Sage Worm Card 2
+Solider Card 2
+Skeleton General Card 2
+Skel Prisoner Card 2
+Stalactic Golem Card 2
+Stem Worm Card 2
+Stone Shooter Card 2
+Sting Card 2
+Spring Rabbit Card 2
+Sleeper Card 2
+Clock Tower Manager Card 2
+Shinobi Card 2
+Increase Soil Card 2
+Wild Ginseng Card 2
+Baby Leopard Card 2
+Anolian Card 2
+Christmas Cookie Card 2
+Amon Ra Card 2
+Owl Duke Card 2
+Owl Baron Card 2
+Iron Fist Card 2
+Arclouse Card 2
+Arc Angeling Card 2
+Apocalipse Card 2
+Antonio Card 2
+Alarm Card 2
+Am_Mut Card 2
+Assaulter Card 2
+Aster Card 2
+Ancient Mummy Card 2
+Ancient Worm Card 2
+Executioner Card 2
+Elder Card 2
+Alligator Card 2
+Alice Card 2
+Tirfing Card 2
+Orc Lady Card 2
+Orc Archer Card 2
+Wild Rose Card 2
+Wicked Nymph Card 2
+Wooden Golem Card 2
+Wootan Shooter Card 2
+Wootan Fighter Card 2
+Evil Cloud Hermit Card 2
+Incantation Samurai Card 2
+Wind Ghost Card 2
+Tiger Guised Fiend Card 2
+clipse Card 2
+Explosion Card 2
+Injustice Card 2
+Incubus Card 2
+Giant Spider Card 2
+Giant Hornet Card 2
+Dancing Dragon Card 2
+Shell Fish Card 2
+Zombie Master Card 2
+Zombie Prisoner Card 2
+Lord of Death Card 2
+Zealotus Card 2
+Gibbet Card 2
+Earth Deleter Card 2
+Geographer Card 2
+Zipper_Bear Card 2
+Tengu Card 2
+Greatest General Card 2
+Chepet Card 2
+Choco Card 2
+Karakasa Card 2
+Kapha Card 2
+Carat Card 2
+Caterpillar Card 2
+Cat O' Nine Tails Card 2
+Kobold Leader Card 2
+Kobold Archer Card 2
+Cookie Card 2
+Quve Card 2
+Kraben Card 2
+Cramp Card 2
+Cruiser Card 2
+Creamy Fear Card 2
+Clock Card 2
+Chimera Card 2
+Killer Mantis Card 2
+Tao Gunka Card 2
+Giant Whisper Card 2
+Tamruan Card 2
+Turtle General Card 2
+Toad Card 2
+Beetle Card 2
+Tri Joint Card 2
+Parasite Card 2
+Panzer Goblin Card 2
+Permeter Card 2
+Fur Seal Card 2
+Punk Card 2
+Penomena Card 2
+Pest Card 2
+False Angel Card 2
+Mobster Card 2
+Stormy Knight Card 2
+Freezer Card 2
+Bloody Knight Card 2
+Hylozoist Card 2
+High Orc Card 2
+Garm Baby Card 2
+Garm Card 2
+Harpy Card 2
+Sea-Otter Card 2
+Blood Butterfly Card 2
+Hyegun Card 2
+Phendark Card 2
+Dark Snake Lord Card 2
+Heater Card 2
+
+2305 0
+2305 0
+2305 0
+2305 0
+2211 0
+2217 0
+2405 0
+2103 0
+2227 0
+2314 0
+2233 0
+2309 0
+2310 0
+2302 0
+"Cotton Shirt [1]" 0
+2613 0
+2205 0
+2212 0
+2612 0
+2219 0
+2316 0
+2231 0
+2204 0
+2610 0
+2101 0
+2210 0
+2221 0
+2228 0
+2409 0
+2501 0
+2502 0
+2303 0
+2304 0
+2505 0
+2307 0
+2308 0
+2107 0
+2278 0
+2503 0
+2313 0
+2371 0
+2208 0
+2209 0
+2840 0
+2325 0
+2401 0
+2402 0
+2323 0
+2408 0
+2105 0
+2403 0
+2321 0
+2611 0
+2332 0
+2333 0
+2715 0
+2335 0
+2330 0
+2223 0
+2328 0
+2329 0
+Acorn 0
+Ancient Lips 0
+Ancient Tooth 0
+Animal Poop 0
+Animal Skin 0
+Anolian Skin 0
+Antelope Horn 0
+Antelope Skin 0
+Ant Jaw 0
+Apple 0
+Apple Juice 0
+Bacillus 0
+Banana 0
+Banana Juice 0
+Barren Trunk 0
+Bear's Footskin 0
+Bee Sting 0
+Bill of Birds 0
+Black Hair 0
+Black Ladle 0
+Blue Hair 0
+Bouquet 0
+Brigan 0
+Broken Liquor Jar 0
+Broken Shell 0
+Broken Shuriken 0
+Broken Sword 0
+Broken Turtle Shell 0
+Bug Leg 0
+Burning Hair 0
+Burning Heart 0
+Burning Horseshoe 0
+Burnt Tree 0
+Cactus Needle 0
+Carrot 0
+Carrot Juice 0
+Cheese 0
+China 0
+Chonchon Doll 0
+Chrysalis 0
+Chung Jah 0
+Clam Flesh 0
+Clam Shell 0
+Claw of Desert Wolf 0
+Claw of Monkey 0
+Claw of Rat 0
+Clover 0
+Cobweb 0
+Cogwheel 0
+Conch 0
+Coral Reef 0
+Cotton Mat 0
+Coupon 0
+Crab Shell 0
+Crystal Mirror 0
+Cultish Masque 0
+Cyfar 0
+Daenggie 0
+Dark Mask 0
+Dead Medusa 0
+Decayed Nail 0
+Destroyed Armor 0
+Detonator 0
+Dokebi Horn 0
+Dragon Canine 0
+Dragon Scale 2
+Dragon Skin 0
+Dragon Tail 0
+Earthworm Peeling 0
+Elder Pixie's Moustache 0
+Emveretarcon 0
+Falcon Food 0
+Fang 0
+Feather 0
+Feather of Birds 0
+Fin 0
+Fine-grained Trunk 0
+Fine Grit 0
+Fine Sand 0
+Fish Tail 0
+Flower 0
+Fluff 0
+Fragment 0
+Frill 0
+Frozen Rose 0
+Garlet 0 0 1 0
+Gill 0
+Glass Bead 0
+Glitter Shell 0
+Glossy Hair 0
+Golden Hair 0
+Grasshopper's Leg 0
+Grit 0
+Harpy Feather 0
+Harpy Talon 0
+Heart of Mermaid 0
+Horn 0
+Horrendous Hair 0
+Horrendous Mouth 0
+Horseshoe 0
+Ice Cubic 0
+Immortal Heart 0
+Insect Feeler 0
+Invite for Duel 0
+Jack o' Pumpkin 0
+Jasmine 0
+Jellopy 0
+Lantern 0
+Large Jellopy 0
+Lava 0
+Live Coal 0
+Manacles 0
+Mane 0
+Maneater Blossom 0
+Maneater Root 0
+Mantis Scythe 0
+Matchstick 0
+Meat 0
+Memento 0
+Metal Fragment 0
+Milk 0
+Mould Powder 2
+Mole Claw 0
+Mole Whiskers 0
+Monster's Feed 0
+Moth Dust 0
+Mother's Letter 0
+Moth Wings 0
+Mud Lump 0
+Mushroom Spore 0
+Needle of Alarm 2
+Nightmare 0
+Nine Tails 0
+Nipper 0
+Nose Ring 0
+Nut Shell 0
+Ogre Tooth 0
+Oil Paper 0
+Old Frying Pan 0
+Old Shuriken 0
+Orc Claw 0
+Orcish Voucher 0
+Orc's Fang 0
+Osiris Doll 0
+PecoPeco Feather 0
+PecoPeco Food 0
+Pencil Case 0
+Phracon 0
+Piece of Bamboo 0
+Piece of Egg Shell 0
+Piece of Shield 0
+Pointed Scale 0
+Poisonous Powder 0
+Poisonous Toad Skin 0
+Poison Spore 0
+Porcupine Quill 0
+Poring Doll 0
+Powder of Butterfly 0
+Pumpkin 0
+Puppet 0
+Raccoon Leaf 0
+Racoon Doll 0
+Ragnarok T-shirt 0
+Rainbow Shell 0
+Rat Tail 0
+Raw Fish 0
+Red Frame 0
+Reins 0
+Reptile Tongue 0
+Resin 0
+Rice Cake 0
+Rocker Doll 0
+Root of Stone 0
+Rotten Bandage 0
+Rouge 0
+Round Shell 0
+Sand Clump 0
+Scale Shell 0
+Scell 0
+Scorpion Claw 0
+Scorpion Nipper 0
+Scorpion Tail 0
+Sea-otter Fur 0
+Sharp Leaf 0
+Sharp Paper 0
+Sharp scale 0 0 1 0
+Shell 0
+Shining Scale 0
+Shining Spear Blade 0
+Shoot 0
+Short Daenggie 0
+Silk Mat 0
+Single Cell 0
+Skel-Bone 0
+Skull 0
+Slick Paper 0
+"Snail's Shell" 0
+Snake Scale 0
+Soft Apron 0
+Solid Shell 0
+Solid Trunk 0
+Songpyun 0 0 1 0
+Spawn 0
+Spoon Stub 0
+Spore Doll 0
+Squid Ink 0
+Stem 0
+Sticky Mucus 0
+Sticky Webfoot 0
+Stiff Horn 0
+Stinky Scale 0
+Stone 0
+Stone Fragment 0
+Stone Heart 0
+Sushi 0
+Tail of Steel Scorpion 0
+Talon 0
+Tattered Clothes 0
+Tendon 0
+Tengu Nose 0
+Tentacle 0
+Tiger Skin 0
+Tongue 0
+Tooth of Bat 0
+Tough Scalelike Stem 0
+Tree Root 0
+Turtle Shell 0
+Venom Canine 0
+Wedding Bouquet 0
+Wing of Dragonfly 0
+Wing of Red Bat 0
+Witherless Rose 0
+Wolf Claw 0
+Worm Peeling 0
+Worn-out Kimono 0
+Worn Out Page 0
+Worn-out Prison Uniform 0
+Yam 0
+Yarn 0
+Yellow Plate 0
+Young Twig 0
+Yoyo Doll 0
+Yoyo Tail 0
+Zargon 0
+"Zenorc's Fang" 0

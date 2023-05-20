@@ -1,0 +1,911 @@
+
+##################### COMMON ####################
+
+automacro _route {
+    console /Stuck during route/
+    call {
+        do tele
+    }
+}
+
+macro _move {
+    log Moving in $.map
+
+    $x = $.param1
+    $y = $.param2
+    $map = $.param3
+
+    if ($map != "") {
+        do move $map $x $y
+    } else {
+        do move $x $y
+    }
+    pause 1
+}
+
+macro _warp_to {
+
+    $town = $.param1
+
+    do conf route_maxWarpFee 10000
+    do move $town
+    pause 1
+}
+
+macro id {
+       $id = @inventory(Magnifier)
+       do is $id
+       do identify 0
+       pause 1
+}
+
+macro id_all {
+
+    $itemsnum = @invamount(Magnifier)
+    $item = @inventory(Magnifier)
+    $counter = 0
+
+    log Identify $itemsnum $item $counter
+
+    while ($counter < $itemsnum) as item_loop
+       do is $item
+       pause 1
+       do identify 0
+       $counter++
+       pause 1
+    end item_loop
+}
+
+
+##################### KAFRA ####################
+
+macro get_from_storage_by_name {
+    $item = @storage($.param1)
+    do storage get $item
+}
+
+macro add_to_storage_by_name {
+    $item = @inventory($.param1)
+    do storage add $item
+}
+
+
+macro _save {
+    log Saving in $.map
+
+    $x = $.param1
+    $y = $.param2
+
+    do move $x $y
+    do talknpc $x $y c r0
+    do conf saveMap $.map
+    pause 1
+}
+
+macro _warp {
+    log Opening storage in $.map
+
+    $x = $.param1
+    $y = $.param2
+    $param3 = $.param3
+
+    do move $x $y
+    do talknpc $x $y c r2 $param3
+    pause 1
+}
+
+macro _storage_open {
+    log Opening storage in $.map
+
+    $x = $.param1
+    $y = $.param2
+
+    do move $x $y
+    do talknpc $x $y c r1
+    do storage
+    pause 1
+}
+
+macro _storage {
+    log Opening storage in $.map
+
+    $x = $.param1
+    $y = $.param2
+
+    do conf storageAuto 1
+    do conf storageAuto_npc $param3 $param1 $param2
+    do autostorage
+    pause 1
+}
+
+macro _kafra_command {
+
+    $command = $.param1
+    $param1 = $.param2
+    $param2 = $.param3
+    $param3 = $.param4
+
+    log $command with params: $param1 $param2 $param3
+
+    if ($command == move) {
+        call _move -- $param1 $param2
+    } elsif ($command == warp) {
+        call _warp -- $param1 $param2 $param3
+    } elsif ($command == storage) {
+        call _storage -- $param1 $param2
+    } elsif ($command == save) {
+        call _save -- $param1 $param2
+    } elsif ($command == storage_open) {
+        call _storage_open -- $param1 $param2
+    } else {
+        log Command should be: save, warp, storage, move, storage_open
+    }
+
+}
+
+macro kafra {
+    $command = $.param1
+    $town = $.param2
+
+    if ($town != "") {
+        do conf route_maxWarpFee 10000
+        do move $town
+        do conf route_maxWarpFee 10000
+    }
+
+    if ($.map == payon || $.map == pay_in) {
+        call _kafra_command -- $command 99 116 $.map
+    } elsif ($.map == prontera || $.map == prt_in) {
+        call _kafra_command -- $command 146 89 $.map
+    } elsif ($.map == aldebaran || $.map == aldeba_in) {
+        call _kafra_command -- $command 143 119 $.map
+    } elsif ($.map == morocc) {
+        call _kafra_command -- $command 156 97 $.map
+    } elsif ($.map == geffen || $.map == geffen_in) {
+        call _kafra_command -- $command 120 62 $.map
+    } else {
+        log You are not in town
+    }
+
+}
+
+##################### JOB MASTER ####################
+
+macro _job_select {
+
+    $command = $.param1
+    $x = $.param2
+    $y = $.param3
+
+    log $command job will be chosen in $x $y
+
+    if ($command == thief) {
+        do talknpc $x $y r5 c r0 c
+    } elsif ($command == aco) {
+        do talknpc $x $y r3 c r0 c
+    } elsif ($command == sword) {
+        do talknpc $x $y r0 c r0 c
+    } elsif ($command == merc) {
+        do talknpc $x $y r4 c r0 c
+    } elsif ($command == bs) {
+        do talknpc $x $y r0 c r0 c
+    } elsif ($command == rogue) {
+        do talknpc $x $y r1 c r0 c
+    } else {
+        log Command should be: sword, aco, thief, merc, bs
+    }
+
+}
+
+macro job_master {
+    $jobname = $.param1
+    $town = $.param2
+
+    if ($town != "") {
+        do conf route_maxWarpFee 10000
+        do move $town
+        do conf route_maxWarpFee 10000
+    }
+
+    if ($.map == payon || $.map == pay_in) {
+        do move payon 101 116
+        call _job_select -- $jobname 101 116
+
+    } elsif ($.map == morocc) {
+        do move morocc 159 97
+        call _job_select -- $jobname 159 97
+    } else {
+        log You are not in town
+    }
+
+}
+
+macro job_bs {
+    call job_master -- bs payon
+}
+
+macro job_rogue {
+    call job_master -- rogue payon
+}
+
+
+automacro _job_bs {
+    run-once 1
+    base > 50
+    base < 65
+    job > 40
+    class Merchant
+    call job_bs
+}
+
+automacro _job_rogue {
+    run-once 1
+    base > 50
+    base < 65
+    job > 40
+    class Thief
+    call job_rogue
+}
+
+
+##################### TOOL DEALER ####################
+
+macro _buy {
+    log Buying tools in $.map
+
+    $param1 = $.param1
+    $param2 = $.param2
+    $param3 = $.param3
+    $toolnum = $.param4
+    $toolamount = $.param5
+
+    do move $param1 $param2 $param3
+
+    do conf buyAP.npc $param3 $param1 $param2
+    do conf buyCP.npc $param3 $param1 $param2
+    do conf buyFW.npc $param3 $param1 $param2
+    do conf buyBW.npc $param3 $param1 $param2
+    do conf buyM.npc prontera 64 125
+
+    do conf sellAuto 1
+    do conf sellAuto_npc $param3 $param1 $param2
+
+    if ($toolnum == 0) {
+        do talknpc $param1 $param2 b b0,$toolamount
+    } elsif ($toolnum == 12) {
+        do talknpc $param1 $param2 b b12,$toolamount
+    } elsif ($toolnum == 13) {
+        do talknpc $param1 $param2 b b13,$toolamount
+    } else {
+        do autobuy
+    }
+
+    pause 1
+}
+
+macro _sell {
+    log Selling in $.map
+
+    $param1 = $.param1
+    $param2 = $.param2
+    $param3 = $.param3
+
+    do move $param1 $param2 $param3
+
+    do conf buyAP.npc $param3 $param1 $param2
+    do conf buyCP.npc $param3 $param1 $param2
+    do conf buyFW.npc $param3 $param1 $param2
+    do conf buyBW.npc $param3 $param1 $param2
+
+    do conf sellAuto 1
+    do conf sellAuto_npc $param3 $param1 $param2
+
+    do autosell
+    pause 1
+
+}
+
+macro _tool_command {
+
+    $command = $.param1
+    $param1 = $.param2
+    $param2 = $.param3
+    $param3 = $.param4
+    $param4 = $.param5
+    $param5 = $.param6
+
+    log $command with params: $param1 $param2 $param3
+
+    if ($command == move) {
+        call _move -- $param1 $param2 $param3
+    } elsif ($command == buy) {
+        call _buy -- $param1 $param2 $param3 $param4 $param5
+    } elsif ($command == sell) {
+        call _sell -- $param1 $param2 $param3
+    } else {
+        log Command should be: save, warp, storage, move
+    }
+
+}
+
+macro tool {
+    log Searching tool dealer in $.map
+
+    $command = $.param1
+    $town = $.param2
+    $toolname = $.param3
+    $amount = $.param4
+
+    if ($town != "") {
+        do conf route_maxWarpFee 10000
+        do move $town
+        do conf route_maxWarpFee 10000
+    }
+
+
+    if ($.map == payon || $.map == pay_in) {
+        call _tool_command -- $command 79 124 payon $toolname $amount
+    } elsif ($.map == prontera || $.map == prt_in) {
+        call _tool_command -- $command 126 76 prt_in $toolname $amount
+    } elsif ($.map == aldebaran || $.map == aldeba_in) {
+        call _tool_command -- $command 94 56 aldeba_in $toolname $amount
+    } elsif ($.map == morocc) {
+        call _tool_command -- $command 147 102 morocc $toolname $amount
+    } elsif ($.map == geffen || $.map == geffen_in) {
+        call _tool_command -- $command 77 167 geffen_in $toolname $amount
+    } else {
+        log You are not in town
+    }
+
+}
+
+
+##################### FARM ####################
+
+macro farm {
+    $location = $.param1
+    $town = $.param2
+
+    log Prepare to farm $location from $town
+
+    call kafra -- save $town
+    call kafra -- storage $town
+    call tool -- buy
+
+    log Setting location to $location
+
+    do conf lockMap $location
+    pause 1
+}
+
+macro farm_novice {
+    do mconf all -1 0 0
+    do mconf Poring 2 0 0
+    do mconf Willow 2 0 0
+    call farm -- pay_fild01 payon
+}
+
+macro farm_spore {
+    do mconf Spore 2 0 0
+    call farm -- pay_fild08 payon
+}
+
+macro farm_wolf {
+    do mconf Wolf 2 0 0
+    call farm -- pay_fild02 payon
+}
+
+macro farm_ant {
+    do mconf Familiar 2 0 0
+    do mconf Piere 2 0 0
+    do mconf Deniro 2 0 0
+    do mconf Andre 2 0 0
+    do mconf Vitata 2 0 0
+    call farm -- anthell02 morocc
+}
+
+macro farm_creamy {
+    do mconf Creamy 2 0 0
+    do mconf Ambernite 2 0 0
+    call farm -- gef_fild13 geffen
+}
+
+macro farm_kobolt {
+    do mconf Kobold 2 0 0
+    do mconf 1133 2 0 0
+    do mconf 1134 2 0 0
+    do mconf 1135 2 0 0
+    do mconf 1546 2 0 0
+    do mconf 1547 2 0 0
+    do mconf 1282 2 0 0
+    do mconf 1545 2 0 0
+    do mconf 1455 2 0 0
+    do mconf Poison Spore 2 0 0
+    do mconf Steel ChonChon 2 0 0
+    call farm -- gef_fild12 geffen
+}
+
+macro farm_ss {
+    do mconf Familiar 2 0 0
+    do mconf Drainliar 2 0 0
+    do mconf Eggyra 2 0 0
+    do mconf Zombie 2 0 0
+    do mconf Skeleton Soldier 2 0 0
+    do mconf Skeleton Archer 2 0 0
+    do mconf Skeleton Worker 2 0 0
+    call farm -- pay_dun01 payon
+}
+
+macro farm_sohee {
+    do mconf Familiar 2 0 0
+    do mconf Drainliar 2 0 0
+    do mconf 1005 2 0 0
+    do mconf Eggyra 2 0 0
+    do mconf Zombie 2 0 0
+    do mconf Skeleton Soldier 2 0 0
+    do mconf Skeleton Archer 2 0 0
+    do mconf Skeleton Worker 2 0 0
+    do mconf Sohee 2 0 0
+    do mconf Munak 2 0 0
+    do mconf Bongun 2 0 0
+    do mconf Nine Tail 2 0 0
+    call farm -- pay_dun03 payon
+}
+
+macro farm_obb {
+    do mconf Familiar 2 0 0
+    do mconf Drainliar 2 0 0
+    do mconf Matyr 2 0 0
+    do mconf Zerom 2 0 0
+    do mconf Requiem 2 0 0
+    call farm -- in_sphinx2 morocc
+}
+
+macro farm_desert_wolf {
+    do mconf Desert Wolf 2 0 0
+    do mconf Sidewinder 2 0 0
+    do mconf Magnolia 2 0 0
+    call farm -- moc_fild14 morocc
+}
+
+macro farm_dragon {
+    do iconf Dragon Scale 2
+    do mconf Petite 2 0 0
+    do mconf Sky Petite 2 0 0
+    do mconf Earth Petite 2 0 0
+    do mconf Mantis 2 0 0
+    do mconf Argos 2 0 0
+    do mconf Flora -1 0 0
+    call farm -- mjolnir_03 geffen
+}
+
+macro farm_prison {
+    do mconf Rideword 2 0 0
+    do mconf Dark Frame 2 0 0
+    do mconf Karat 2 0 0
+    do mconf Gargoyle 2 0 0
+    do mconf Injustice 2 0 0
+    do mconf Rybio 2 0 0
+    do mconf Skeleton Prisoner 2 0 0
+    do mconf Zombie Prisoner 2 0 0
+    do mconf Hunter Fly 2 0 0
+    call farm -- gl_prison geffen
+}
+
+macro farm_prison_one {
+    do mconf Rideword 2 0 0
+    do mconf Dark Frame 2 0 0
+    do mconf Karat 2 0 0
+    do mconf Gargoyle 2 0 0
+    do mconf Injustice 2 0 0
+    do mconf Rybio 2 0 0
+    do mconf Skeleton Prisoner 2 0 0
+    do mconf Zombie Prisoner 2 0 0
+    do mconf Phendark 2 0 0
+    do mconf Cramp 2 0 0
+    do mconf Zherlthsh 2 0 0
+    call farm -- gl_prison1 geffen
+}
+
+
+macro farm_knt {
+    do mconf Rideword 2 0 0
+    do mconf Dark Frame 2 0 0
+    do mconf Karat 2 0 0
+    do mconf Gargoyle 2 0 0
+    do mconf Injustice 2 0 0
+    do mconf Rybio 2 0 0
+    do mconf Skeleton Prisoner 2 0 0
+    do mconf Zombie Prisoner 2 0 0
+    do mconf Phendark 2 0 0
+    do mconf Cramp 2 0 0
+    do mconf Zherlthsh 2 0 0
+    do mconf Khalitzburg 2 0 0
+    do mconf Raydric 2 0 0
+    do mconf Raydric Archer 2 0 0
+    do mconf Knight of Abyss 2 0 0
+    do mconf Alice 2 0 0
+    do mconf Joker 2 0 0
+    do mconf Wanderer 2 0 0
+    call farm -- gl_prison1 geffen
+}
+
+macro farm_clock {
+    do mconf Rideword 2 0 0
+    do mconf Tower Keeper 2 0 0
+    do mconf Clock 2 0 0
+    do mconf Mimic 2 0 0
+    do mconf Punk 2 0 0
+    call farm -- c_tower2 aldebaran
+}
+
+##################### AUTOFARM ####################
+
+automacro _farm_novice {
+    run-once 1
+    base < 15
+    job < 10
+    call farm_novice
+}
+
+automacro _farm_spore {
+    run-once 1
+    base > 15
+    base < 30
+    call farm_spore
+}
+
+automacro _farm_wolf {
+    run-once 1
+    base > 30
+    base < 55
+    call farm_wolf
+}
+
+##################### INTERACT ####################
+
+macro get_from_storage_all {
+    log Getting all $.param1 from storage
+    $itemname = $.param1
+    $maxweight = @eval($.maxweight - 200)
+
+    call kafra -- storage_open
+    $items = @Storage($itemname)
+    while ($items != "" && $.weight < $maxweight) as items_loop
+        $item = [$items]
+        do storage get $item
+    end items_loop
+    do storage close
+    pause 1
+}
+
+macro deal_add {
+    $item = @inventory($.param1)
+    $player = $.param2
+
+    do deal $player
+    do storage get $item
+}
+
+macro _lock {
+    do conf storageAuto 0
+    do conf sellAuto 0
+    do conf dealAuto 2
+    do conf lockMap $.map
+#    do conf lockMap_x $.x
+#    do conf lockMap_y $.y
+    do ai auto
+}
+
+macro _release {
+    do conf storageAuto 1
+    do conf sellAuto 1
+    do conf lockMap None
+#    do conf lockMap_x None
+#    do conf lockMap_y None
+    do ai auto
+}
+
+macro deal_all {
+
+    log Deal all $.param1 with 10 prieces batch
+
+    $itemname = $.param1
+    $player = $.param2
+
+    $items = @Inventory($itemname)
+    $item = [$items]
+
+    log items in inventory $items
+
+    while ($item != "") as batch_loop
+        $counter = 0
+        do conf dealAuto 0
+        do deal $player
+        pause 1
+        while ($counter < 10 && $item != "") as items_loop
+            $item = [$items]
+            log Adding $counter item $item
+            do deal add $item
+            $counter++
+        end items_loop
+        do conf dealAuto 2
+        do deal
+        pause 1
+        do deal
+        pause 1
+    end batch_loop
+}
+
+macro take_zeny {
+    do conf dealAuto 0
+    pause 1
+    do deal add z 100000
+    do conf dealAuto 2
+    do deal
+    pause 1
+    do deal
+    pause 1
+}
+
+macro give {
+    pause 1
+    do conf dealAuto 2
+    pause 30
+    do conf dealAuto 0
+}
+
+
+macro distribute {
+    log Searching tool dealer in $.map
+
+    $command = $.param1
+    $itemname = $.param2
+    $town = $.param3
+    $x = $.param4
+    $y = $.param5
+    $player = "Showmethemoney"
+
+    if ($command == give) {
+        do move $town $x $y
+        do pm $command
+        call deal_all $itemname $player
+    } elsif ($command == take) {
+        do move $town $x $y
+        do pm $command zeny
+        do conf dealAuto 2
+        pause 10
+        do conf dealAuto 0
+    } else {
+        log Command should be: give, take
+    }
+}
+
+automacro _give {
+    pm give
+    call give
+}
+
+automacro _take {
+    pm take zeny
+    zeny > 100000
+    call take_zeny
+}
+
+
+##################### REFINE ####################
+
+macro move_to_refiner {
+    log Going to refiner at prontera
+    call _warp_to -- prontera
+    do move prt_in 63 60
+}
+
+macro buy_refiner {
+    log $.param1 $.param2
+
+    $itemname = $.param1
+    $amount = $.param2
+
+    do talknpc 56 68 c $itemname d$amount
+}
+
+macro check_refiner {
+    log Checking refiner
+
+    $itemlevel = $.param1
+
+    if ($itemlevel == 1) {
+        $itemsnum = @invamount(Emveretarcon)
+        if ($itemsnum < 7) {
+            call buy_refiner -- r0 20
+        }
+    } elsif ($itemlevel == 2) {
+        $itemsnum = @invamount(Emveretarcon)
+        if ($itemsnum < 6) {
+            call buy_refiner -- r1 20
+        }
+    } elsif ($itemlevel == 3) {
+        $itemsnum = @invamount(Oridecon)
+        if ($itemsnum < 5) {
+            log not enough ori
+        }
+    } elsif ($itemlevel == 4) {
+        $itemsnum = @invamount(Oridecon)
+        if ($itemsnum < 4) {
+            log not enough Oridecon
+        }
+    }  elsif ($itemlevel == 0) {
+        $itemsnum = @invamount(Elunium)
+        if ($itemsnum < 4) {
+            log not enough Elunium
+        }
+    }
+}
+
+macro _refine {
+
+    log Doing refining with params:
+    log $.param1 $.param2 $.param3
+
+    $eqanswer = $.param1
+    $refinelevel = $.param2
+    $refinetype = $.param3
+
+    if ($eqtype != "" && $refinelevel != "" && $refinetype != "" ) {
+        $i = 1
+        while ($i <= $refinelevel) as refine_loop
+            log Refining +$i
+            if ($refinetype == safe) {
+                do talknpc 63 60 c $eqanswer c r0
+            } elsif ($refinetype == notsafe) {
+                do talknpc 63 60 c $eqanswer c r0 c c r0 c n
+            } else {
+                log Invalid refine type. Types are: safe, notsafe
+            }
+            $i++
+        end refine_loop
+    } else {
+        log Params not set
+    }
+}
+
+macro refine_eq {
+
+    log Refine current equip with params:
+    log $.param1 $.param2 $.param3
+
+    $eqtype = $.param1
+    $refinelevel = $.param2
+    $refinetype = $.param3
+
+    if ($refinelevel != "" && $eqtype != "" && $refinetype != "") {
+        log Refining equip $eqtype $refinetype
+        if ($eqtype == weapon) {
+            call _refine -- r2 $refinelevel $refinetype
+        } elsif ($eqtype == shoes) {
+            call _refine -- r4 $refinelevel $refinetype
+        } else {
+            log Invalid item type. Types are [weapon, shoes]
+        }
+    }
+}
+
+macro refine_all {
+
+    log Refine all items names in inventory with params:
+    log $.param1 $.param2 $.param3 $.param4
+
+    $itemname = $.param1
+    $eqtype = $.param2
+    $refinelevel = $.param3
+    $refinetype = $.param4
+    $itemlevel = $.param5
+
+    if ($eqtype != "" && $refinelevel != "" && $refinetype != "" && $itemname != "") {
+        $items = @Inventory($itemname)
+        while ($items != "") as items_loop
+            $item = [$items]
+            log Equipping item $itemname with id $item from $items
+            do eq $item
+            do i
+            call check_refiner -- $itemlevel
+            call refine_eq -- $eqtype $refinelevel $refinetype
+        end items_loop
+        }
+}
+
+macro refine_all_to_10 {
+
+    log Refine all items names in inventory with params:
+    log $.param1 $.param2 $.param3
+
+    $itemname = $.param1
+    $eqtype = $.param2
+    $itemlevel = $.param3
+
+    log Refining equip $eqtype $refinetype
+
+    if ($itemlevel == 0) {
+        call refine_all -- "$itemname" $eqtype 4 safe $itemlevel
+        call refine_all -- "+4 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+5 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+6 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+7 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+8 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+9 $itemname" $eqtype 1 notsafe $itemlevel
+    } elsif ($itemlevel == 1) {
+        call refine_all -- "$itemname" $eqtype 7 safe $itemlevel
+        call refine_all -- "+7 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+8 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+9 $itemname" $eqtype 1 notsafe $itemlevel
+    } elsif ($itemlevel == 2) {
+        call refine_all -- "$itemname" $eqtype 6 safe $itemlevel
+        call refine_all -- "+6 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+7 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+8 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+9 $itemname" $eqtype 1 notsafe $itemlevel
+    } elsif ($itemlevel == 3) {
+        call refine_all -- "$itemname" $eqtype 5 safe $itemlevel
+        call refine_all -- "+5 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+6 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+7 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+8 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+9 $itemname" $eqtype 1 notsafe $itemlevel
+    } elsif ($itemlevel == 4) {
+        call refine_all -- "$itemname" $eqtype 4 safe $itemlevel
+        call refine_all -- "+4 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+5 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+6 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+7 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+8 $itemname" $eqtype 1 notsafe $itemlevel
+        call refine_all -- "+9 $itemname" $eqtype 1 notsafe $itemlevel
+    } else {
+        log Invalid item type. Types are [01234]
+    }
+
+}
+
+##################### SMART ROUTE ####################
+
+# 0  Arrow                   Arrow                         1z   0
+# 1  Silver Arrow            Arrow                         3z   0
+# 2  Fire Arrow              Arrow                         3z   0
+macro arrows_in_izlude_tool_dealer {
+    do move 87 65
+    do talknpc 87 65
+    do store
+    do buy 2 3000
+}
+
+macro izlude_to_island {
+    do move 201 181
+    do talknpc 201 181 c r1 c
+    do move 195 151
+    do talknpc 195 151 c c c r0 c
+}
+
+macro _buy_fire_arrows {
+    do conf route_maxWarpFee 10000
+    do move izlude
+    call izlude_to_island
+    call arrows_in_izlude_tool_dealer
+    do conf route_maxWarpFee 10000
+}
+
+macro buy_fire_arrows_smart_route {
+    if ($.zeny < 20000) {
+        log Not enough zeny you have only $.zeny
+    } elsif (@inventory(Butterfly Wing) == -1 ) {
+        log You dont have a butterfly wing to come back
+    } else {
+        log You got everything you need
+        do autosell
+        do autostorage
+        call _buy_fire_arrows
+        $bw = @inventory(Butterfly Wing)
+        $fa = @inventory(Butterfly Wing)
+        do is $bw
+        do eq $fa
+    }
+}
