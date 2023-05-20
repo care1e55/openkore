@@ -1,0 +1,20 @@
+# This file allows specific AI control for certain monsters
+
+# <attack>:
+# -1 means to leave the monster alone, even if it attacks you.
+#  0 means to leave the monster alone, unless it attacks you.
+#  1 means to always auto-attack this monster.
+#  2 means always aggressive, auto-attack this monster when it appears, even if sitting.
+#  3 means to attack the monster once (provoke) then leave it, useful for mobbing.
+
+all -1 0 0
+
+# MVPs
+"Maya Purple" 0 1 0
+Maya 0 1 0
+
+# plants
+Blue Herb 2 0 0
+Black Mushroom 0 0 0
+Red Plant 0 0 0
+Yellow Plant 0 0 0
