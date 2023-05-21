@@ -27,7 +27,11 @@ macro _warp_to {
 
     $town = $.param1
 
+    if ($town == comodo) {
+        do conf route_maxWarpFee 0
+    } else {
     do conf route_maxWarpFee 10000
+    }
     do move $town
     pause 1
 }
@@ -55,7 +59,6 @@ macro id_all {
        pause 1
     end item_loop
 }
-
 
 ##################### KAFRA ####################
 
@@ -148,9 +151,7 @@ macro kafra {
     $town = $.param2
 
     if ($town != "") {
-        do conf route_maxWarpFee 10000
-        do move $town
-        do conf route_maxWarpFee 10000
+        call _warp_to -- $town
     }
 
     if ($.map == payon || $.map == pay_in) {
@@ -163,6 +164,12 @@ macro kafra {
         call _kafra_command -- $command 156 97 $.map
     } elsif ($.map == geffen || $.map == geffen_in) {
         call _kafra_command -- $command 120 62 $.map
+    } elsif ($.map == izlude || $.map == izlude_in) {
+        call _kafra_command -- $command 134 87 $.map
+    } elsif ($.map == baylan) {
+        call _kafra_command -- $command 106 58 $.map
+    } elsif ($.map == comodo  || $.map == cmd_in01) {
+        call _kafra_command -- $command 195 150 $.map
     } else {
         log You are not in town
     }
@@ -267,9 +274,6 @@ macro _buy {
     do conf buyBW.npc $param3 $param1 $param2
     do conf buyM.npc prontera 64 125
 
-    do conf sellAuto 1
-    do conf sellAuto_npc $param3 $param1 $param2
-
     if ($toolnum == 0) {
         do talknpc $param1 $param2 b b0,$toolamount
     } elsif ($toolnum == 12) {
@@ -342,7 +346,6 @@ macro tool {
         do conf route_maxWarpFee 10000
     }
 
-
     if ($.map == payon || $.map == pay_in) {
         call _tool_command -- $command 79 124 payon $toolname $amount
     } elsif ($.map == prontera || $.map == prt_in) {
@@ -353,6 +356,10 @@ macro tool {
         call _tool_command -- $command 147 102 morocc $toolname $amount
     } elsif ($.map == geffen || $.map == geffen_in) {
         call _tool_command -- $command 77 167 geffen_in $toolname $amount
+    } elsif ($.map == izlude || $.map == izlude_in || $.map == baylan) {
+        call _tool_command -- $command 115 61 izlude_in $toolname $amount
+    } elsif ($.map == comodo || $.map == cmd_in01) {
+        call _tool_command -- $command 79 182 cmd_in01 $toolname $amount
     } else {
         log You are not in town
     }
@@ -368,14 +375,17 @@ macro farm {
 
     log Prepare to farm $location from $town
 
+    call _warp_to $town
     call kafra -- save $town
     call kafra -- storage $town
     call tool -- buy
+    call tool -- sell
 
     log Setting location to $location
 
     do conf lockMap $location
     pause 1
+    do ai auto
 }
 
 macro farm_novice {
@@ -482,7 +492,7 @@ macro farm_dragon {
 macro farm_prison {
     do mconf Rideword 2 0 0
     do mconf Dark Frame 2 0 0
-    do mconf Karat 2 0 0
+    do mconf Carat 2 0 0
     do mconf Gargoyle 2 0 0
     do mconf Injustice 2 0 0
     do mconf Rybio 2 0 0
@@ -495,7 +505,7 @@ macro farm_prison {
 macro farm_prison_one {
     do mconf Rideword 2 0 0
     do mconf Dark Frame 2 0 0
-    do mconf Karat 2 0 0
+    do mconf Carat 2 0 0
     do mconf Gargoyle 2 0 0
     do mconf Injustice 2 0 0
     do mconf Rybio 2 0 0
@@ -511,7 +521,7 @@ macro farm_prison_one {
 macro farm_knt {
     do mconf Rideword 2 0 0
     do mconf Dark Frame 2 0 0
-    do mconf Karat 2 0 0
+    do mconf Carat 2 0 0
     do mconf Gargoyle 2 0 0
     do mconf Injustice 2 0 0
     do mconf Rybio 2 0 0
@@ -527,16 +537,91 @@ macro farm_knt {
     do mconf Alice 2 0 0
     do mconf Joker 2 0 0
     do mconf Wanderer 2 0 0
-    call farm -- gl_prison1 geffen
+    call farm -- gl_knt01 geffen
 }
 
 macro farm_clock {
     do mconf Rideword 2 0 0
-    do mconf Tower Keeper 2 0 0
+    do mconf 1270 2 0 0 # Clock Tower Manager
     do mconf Clock 2 0 0
     do mconf Mimic 2 0 0
     do mconf Punk 2 0 0
     call farm -- c_tower2 aldebaran
+}
+
+macro farm_alarm {
+    do mconf Rideword 2 0 0
+    do mconf 1270 2 0 0 # Clock Tower Manager
+    do mconf Clock 2 0 0
+    do mconf Mimic 2 0 0
+    do mconf Punk 2 0 0
+    do mconf Alarm 2 0 0
+    call farm -- c_tower3 aldebaran
+}
+
+macro farm_chepet {
+    do mconf 1250 2 0 0 # Chepet
+    do mconf 1444 2 0 0 # Chepet
+    do mconf 1249 2 0 0 # Myst Case
+    do mconf 1248 0 0 0 # Cruiser
+    do mconf 1443 0 0 0 # Cruiser
+    do mconf 1090 2 0 0 # Mastering
+    do mconf 1096 2 0 0 # Angeling
+    do mconf 1852 2 0 0 # Angeling
+    do mconf 1766 2 0 0 # Angeling
+    do mconf 1246 0 0 0 # Christmas Cookie
+    do mconf 1265 0 0 0 # Cookie
+    do mconf Marin 0 0 0
+    do mconf Drops 0 0 0
+    call farm -- xmas_dun01 aldebaran
+}
+
+macro farm_myst_case {
+    do mconf 1250 2 0 0 # Chepet
+    do mconf 1444 2 0 0 # Chepet
+    do mconf 1249 2 0 0 # Myst Case
+    do mconf 1248 0 0 0 # Cruiser
+    do mconf 1443 0 0 0 # Cruiser
+    do mconf 1090 2 0 0 # Mastering
+    do mconf 1096 2 0 0 # Angeling
+    do mconf 1852 2 0 0 # Angeling
+    do mconf 1766 2 0 0 # Angeling
+    do mconf 1246 0 0 0 # Christmas Cookie
+    do mconf 1265 0 0 0 # Cookie
+    do mconf Marin 0 0 0
+    do mconf Drops 0 0 0
+    do mconf 1251 -1 1 0 # Stormy Knight
+    call farm -- xmas_dun02 aldebaran
+}
+
+
+macro farm_obeaune {
+    do mconf Obeaune 2 0 0
+    do mconf Hydra 2 0 0
+    do mconf Merman 2 0 0
+    do mconf Cornutus 2 0 0
+    call farm -- iz_dun02 izlude
+}
+
+macro farm_marc {
+    do mconf Obeaune 2 0 0
+    do mconf 1068 2 0 0 # Hydra
+    do mconf Merman 2 0 0
+    do mconf Cornutus 2 0 0
+    do mconf Marc 2 0 0
+    do mconf Phen 2 0 0
+    do mconf 1069 2 0 0 # Sword Fish
+    do mconf Marine Sphere 2 0 0
+    call farm -- iz_dun03 izlude
+}
+
+macro farm_thara {
+    do mconf Thara Frog 2 0 0
+    do mconf Penomena 2 0 0
+    do mconf Neraid 2 0 0
+    do mconf Hydra 2 0 0
+    do mconf Pest 2 0 0
+    call farm -- beach_dun3 comodo
 }
 
 ##################### AUTOFARM ####################
@@ -695,7 +780,7 @@ automacro _take {
 
 ##################### REFINE ####################
 
-macro move_to_refiner {
+    macro move_to_refiner {
     log Going to refiner at prontera
     call _warp_to -- prontera
     do move prt_in 63 60
@@ -752,7 +837,7 @@ macro _refine {
     $refinelevel = $.param2
     $refinetype = $.param3
 
-    if ($eqtype != "" && $refinelevel != "" && $refinetype != "" ) {
+    if ($refinelevel != "" && $refinetype != "" ) {
         $i = 1
         while ($i <= $refinelevel) as refine_loop
             log Refining +$i
@@ -770,39 +855,17 @@ macro _refine {
     }
 }
 
-macro refine_eq {
-
-    log Refine current equip with params:
-    log $.param1 $.param2 $.param3
-
-    $eqtype = $.param1
-    $refinelevel = $.param2
-    $refinetype = $.param3
-
-    if ($refinelevel != "" && $eqtype != "" && $refinetype != "") {
-        log Refining equip $eqtype $refinetype
-        if ($eqtype == weapon) {
-            call _refine -- r2 $refinelevel $refinetype
-        } elsif ($eqtype == shoes) {
-            call _refine -- r4 $refinelevel $refinetype
-        } else {
-            log Invalid item type. Types are [weapon, shoes]
-        }
-    }
-}
-
 macro refine_all {
 
     log Refine all items names in inventory with params:
     log $.param1 $.param2 $.param3 $.param4
 
     $itemname = $.param1
-    $eqtype = $.param2
-    $refinelevel = $.param3
-    $refinetype = $.param4
-    $itemlevel = $.param5
+    $refinelevel = $.param2
+    $refinetype = $.param3
+    $itemlevel = $.param4
 
-    if ($eqtype != "" && $refinelevel != "" && $refinetype != "" && $itemname != "") {
+    if ($refinelevel != "" && $refinetype != "" && $itemname != "") {
         $items = @Inventory($itemname)
         while ($items != "") as items_loop
             $item = [$items]
@@ -810,7 +873,7 @@ macro refine_all {
             do eq $item
             do i
             call check_refiner -- $itemlevel
-            call refine_eq -- $eqtype $refinelevel $refinetype
+            call _refine -- r0 $refinelevel $refinetype
         end items_loop
         }
 }

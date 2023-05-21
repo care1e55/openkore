@@ -360,7 +360,7 @@ chatTitleOversize 0
 shopTitleOversize 0
 buyerShopTitleOversize 0
 
-sleepTime 10000
+sleepTime 50000
 
 ignoreAll 0
 itemHistory 0

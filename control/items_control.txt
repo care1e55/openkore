@@ -24,6 +24,11 @@ Authoritative Badge 30 0 0
 
 ##### WORTHLESS GEARS #####
 # Worthless gears which are sold by default
+Pantie 0 0 1
+"Great Bow [3]" 0 0 1 # 2305
+"Stiletto [2]" 0 0 1 # 2305
+"Knife [3]" 0 0 1 # 2305
+"Bow [3]" 0 0 1 # 2305
 "Club [3]" 0 0 1 # 2305
 "Club [4]" 0 0 1 # 2305
 "Adventurer's Suit [1]" 0 0 1 # 2305
@@ -86,7 +91,6 @@ Tights 0 0 1 # 2330
 Turban 0 0 1 # 2223
 Wooden Mail 0 0 1 # 2328
 "Wooden Mail [1]" 0 0 1 # 2329
-
 
 
 ##### STANDARD LOOT #####
