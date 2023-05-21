@@ -1,0 +1,595 @@
+izlude 123 87 Guide#izlude001
+izlude 134 87 Kafra Employee#iz
+izlude 125 116 Welcome Sign
+izlude 131 116 Job Master#izlude
+izlude 150 118 Dega
+izlude 164 138 Pet Merchant#izlude001
+izlude 179 183 Izlude Marina
+izlude 182 186 Edgar
+izlude 201 181 Sailor#izlude002
+izlu2dun 106 58 Kafra Employee
+payon 76 106 Healer#payon
+payon 82 116 Guide#oldpay
+payon 97 116 Kafra Corp. Rep.#5
+payon 101 116 Job Master#payon
+payon 153 182 Cool Event Staff#pay
+payon 158 182 Kafra Voting Staff#pay
+pay_arche 55 123 Kafra Employee
+izlude 129 118 Smile Assistance#4
+izlude 134 118 Reset Girl#izlude
+payon 97 120 Mad Hatter
+payon 99 116 Kafra Employee
+payon 103 116 Reset Girl#payon
+payon 163 142 Jim's Mother#oldpay
+izlude 94 109 Healer#izl
+izlude 135 78 Charfri
+izlude 150 143 Kylick
+izlu2dun 108 27 Sailor#izlude001
+izlude 150 143 Kylick
+izlude 137 126 Milk Merchant#izlude001
+izlude 134 118 Reset Girl#izlude
+izlude 135 78 Charfri
+izlu2dun 108 27 Sailor#izlude001
+izlude 137 126 Milk Merchant#izlude001
+prontera 146 87 Kafra Corp. Rep.#1
+izlude 94 109 Healer#izl
+alberta 26 229 Kafra Corp. Rep.#4
+alberta 28 229 Kafra Employee
+alberta 23 238 Guide#1
+alberta 31 240 Reset Girl#alberta
+alberta 28 240 Job Master#alberta
+alberta 25 240 Healer#alb
+izlude 119 121 Cuskoal
+izlude 121 138 Butcher#izlude001
+gl_in01 159 118 Marionette
+gl_in01 159 118 Marionette
+payon 75 124 PVP Arena#payon
+payon 79 124 Tool Dealer#oldpay2
+alberta 113 53 Smile Assistance
+alberta 120 53 Zic
+alberta 113 60 Kafra Employee
+alberta 120 60 Guide#2
+alberta 114 70 Cool Event Staff#alb
+alberta 119 70 Kafra Voting Staff#alb
+alberta 90 71 Soda Man
+alberta 89 96 Necko
+alberta_in 182 96 Tool Dealer#alberta003
+gl_in01 151 125 A r i e s
+gl_in01 128 155 Marionette
+gl_in01 128 155 Marionette
+gl_in01 128 155 Marionette
+gl_in01 128 155 Marionette
+alberta 62 156 Phina
+alberta 93 174 Grandma
+alberta 117 134 Elin
+gl_in01 177 173 Marionette
+alberta 62 156 Phina
+alberta 93 174 Grandma
+alberta 117 134 Elin
+payon 142 104 Pet Merchant#payon99
+payon 163 139 Lady#oldpay009
+gl_in01 144 116 Marionette
+gl_in01 144 116 Marionette
+gl_in01 144 116 Marionette
+gl_in01 144 116 Marionette
+gl_in01 137 122 A r i e s
+gl_in01 146 119 S c o r p i o
+gl_in01 145 120 G e m i n 1
+gl_in01 143 118 A q u a r i u s
+gl_in01 156 118 A q u a r i u s
+gl_in01 131 173 A r i e s
+gl_in01 147 141 Marionette
+gl_in01 147 141 Marionette
+pay_gld 208 268 Bamboo Grove Hill#1-2
+pay_gld 321 289 Holy Shadow#2
+gl_in01 153 118 S a g i t t a r i u s
+gl_in01 135 128 S a g i t t a r i u s
+pay_gld 137 160 Sacred Altar#1-2
+pay_gld 143 160 Sacred Altar#2
+payg_cas04 248 259 Sacred Altar#6
+payg_cas04 255 259 Sacred Altar#5-2
+pay_gld 133 151 Sacred Altar#3
+pay_gld 91 239 Bright Arbor#4
+pay_gld 190 277 Bamboo Grove Hill#3
+pay_gld 199 268 Bamboo Grove Hill#2
+pay_gld 187 294 Bamboo Grove Hill#4
+pay_gld 153 166 Sacred Altar#4
+pay_gld 271 163 Scarlet Palace#4
+pay_gld 295 183 Repairman#pay_gld
+gl_in01 153 115 A q u a r i u s
+gl_in01 183 114 Sage Worm
+gl_in01 151 120 A q u a r i u s
+pay_gld 333 254 Holy Shadow#4
+gl_in01 157 138 Marionette
+gl_in01 157 138 Marionette
+gl_in01 157 138 Marionette
+gl_in01 172 113 Marionette
+gl_in01 154 169 Marionette
+gl_in01 149 175 Sage Worm
+payon 29 116 Young Man#1oldpay
+pay_gld 292 112 Scarlet Palace#1-2
+pay_gld 291 135 Scarlet Palace#3
+pay_gld 125 236 Bright Arbor#1-2
+pay_gld 116 233 Bright Arbor#3
+pay_gld 110 233 Bright Arbor#2
+moc_fild15 86 331 Hode
+alberta 131 139 Drunken old man
+alberta 189 151 Sailor Fisk
+alberta 195 151 Paul
+alb2trea 59 69 Kafra Employee
+treasure02 102 79 Kukre
+xmas 143 136 Healer#xmas
+xmas 146 136 Christmas Clown
+xmas 148 134 Kafra Employee
+xmas 150 136 Job Master#xmas
+xmas 153 136 Reset Girl#xmas
+xmas_dun02 175 191 Sylar
+prontera 105 87 Gift Merchant#prt001
+prontera 106 117 Merideth
+prontera 73 134 Milk Merchant#prt001
+prontera 78 150 Dairenne
+prontera 58 182 Flower Girl#prt001
+prontera 29 200 Guide#399
+prontera 29 207 Kafra Employee
+prt_fild05 290 221 Tool Dealer#prt002
+prt_fild05 290 224 Kafra Employee
+prt_fild05 270 212 Culvert Gaurdian
+prt_sewb4 146 64 Thief Bug Male
+prt_sewb4 147 64 Thief Bug Male
+prt_sewb4 152 62 Golden Thief Bug
+prt_sewb4 150 62 Thief Bug Male
+prt_sewb4 153 60 Thief Bug Male
+payon 92 113 Pak Tam
+pay_fild11 282 137 Bigfoot
+pay_fild11 277 142 Bigfoot
+pay_fild11 267 137 Bigfoot
+prontera 146 89 Kafra Employee
+gef_fild10 60 328 Healer#geffild10
+gef_fild10 73 340 Kafra Employee
+gef_fild14 156 223 bird
+gef_fild14 159 233 bird
+gef_fild14 150 225 High Orc
+gef_fild14 185 70 High Orc
+gef_fild14 252 201 Orc Archer
+gef_fild14 173 268 High Orc
+gef_fild14 181 262 High Orc
+gef_fild14 142 220 Orc Hero
+gef_fild14 145 231 Sylar
+gef_fild14 167 239 Orc Archer
+pay_gld 292 120 Scarlet Palace#2
+gl_in01 129 151 L i b r a
+gl_in01 129 140 G e m i n i
+gl_in01 129 133 T a u r u s
+gl_in01 129 132 G e m i n i
+gl_in01 129 134 L i b r a
+gl_in01 134 115 Marionette
+gl_in01 130 125 Marionette
+gl_in01 130 125 Marionette
+gl_in01 185 162 Marionette
+gl_in01 168 162 Sage Worm
+gl_in01 181 162 Sage Worm
+pay_gld 321 298 Holy Shadow#1-2
+alberta 232 106 Gershaun
+alberta 247 123 Gotanblue
+alberta 232 106 Gershaun
+alberta 247 123 Gotanblue
+tur_dun01 165 29 Sailor#tur2
+tur_dun01 165 29 Sailor#tur2
+tur_dun01 158 54 Tool Dealer#turtle01
+tur_dun01 160 80 Skull Stone
+morocc 145 44 Jewel Seller#moc001
+morocc 150 50 Lapidary
+morocc 155 50 Healer#mor
+morocc 166 51 Jewel Seller#moc002
+morocc 157 72 Butcher#moc001
+morocc 158 97 Smile Assistance#5
+morocc 154 97 Kafra Corp. Rep.#3
+morocc 159 97 Job Master#morocc
+morocc 156 97 Kafra Employee
+morocc 162 97 Guide#2099
+morocc 145 101 Reset Girl#morocc
+morocc 170 101 Tool Dealer#moc003
+morocc 147 102 Tool Dealer#moc001
+morocc 139 92 Trader#moc002
+morocc 121 109 Roberto#archer
+morocc 79 111 Poring Lady Syvia
+morocc 28 161 Guide#3099
+moc_ruins 59 157 Kafra Employee
+tur_dun01 158 54 Tool Dealer#turtle01
+comodo 195 150 Kafra Employee
+comodo 201 146 Healer#com
+comodo 194 158 Job Master#comodo
+comodo 193 151 Bor Robin#1
+comodo 187 153 Hullaris
+comodo 181 147 Reset Girl#comodo
+comodo 181 147 Reset Girl#comodo
+comodo 180 153 Sonotora#1
+comodo 180 153 Sonotora#1
+comodo 227 158 Hair Ornament Girl
+comodo 227 158 Hair Ornament Girl
+comodo 227 158 Hair Ornament Girl
+comodo 209 305 Emralhandas
+comodo 209 305 Emralhandas
+comodo 209 305 Emralhandas
+comodo 204 310 Rockha
+comodo 204 310 Rockha
+comodo 204 310 Rockha
+comodo 176 350 Comodo Guide#2
+comodo 176 350 Comodo Guide#2
+comodo 176 350 Comodo Guide#2
+beach_dun2 113 224 Stalactite Golem
+beach_dun2 125 247 Stalactite Golem
+beach_dun2 120 44 Stalactite Golem
+tur_dun01 160 80 Skull Stone
+morocc 123 58 Slayer Kid
+payon 166 140 Woman#oldpay
+comodo 244 296 Item Collector#comodo00
+comodo 215 307 BBQ Mama
+comodo 218 309 Razy
+comodo 206 310 Rochito
+comodo 206 310 Rochito
+comodo 206 310 Rochito
+beach_dun2 216 173 Tri-Joint
+comodo 244 296 Item Collector#comodo00
+comodo 215 307 BBQ Mama
+comodo 218 309 Razy
+beach_dun2 108 210 Stalactite Golem
+beach_dun2 125 159 A q u a r i u s
+beach_dun2 142 118 Neraid
+beach_dun2 78 99 Stalactite Golem
+beach_dun2 240 236 Stalactite Golem
+beach_dun2 131 127 A q u a r i u s
+beach_dun2 226 168 Neraid
+beach_dun2 61 241 Stalactite Golem
+beach_dun2 261 146 A q u a r i u s
+beach_dun2 196 271 C a n c e r
+beach_dun2 139 196 Stalactite Golem
+beach_dun2 234 247 Tri-Joint
+beach_dun2 138 195 C a n c e r
+beach_dun2 222 206 C a n c e r
+beach_dun2 125 156 S c o r p i o
+beach_dun2 133 165 S c o r p i o
+beach_dun2 154 184 A q u a r i u s
+beach_dun2 212 38 Neraid
+beach_dun2 176 166 C a n c e r
+beach_dun2 135 108 Stalactite Golem
+beach_dun2 130 113 Stalactite Golem
+beach_dun2 147 115 C a n c e r
+beach_dun2 176 153 C a n c e r
+beach_dun2 158 185 S c o r p i o
+beach_dun2 89 39 Stalactite Golem
+beach_dun2 230 49 C a n c e r
+beach_dun2 187 160 S c o r p i o
+beach_dun2 122 158 C a n c e r
+beach_dun2 155 39 Tri-Joint
+beach_dun2 262 46 Stalactite Golem
+beach_dun2 194 161 S c o r p i o
+beach_dun2 126 197 Stalactite Golem
+beach_dun2 109 229 Stalactite Golem
+beach_dun2 126 127 A q u a r i u s
+beach_dun2 99 113 C a n c e r
+beach_dun2 111 117 A q u a r i u s
+beach_dun2 219 174 A q u a r i u s
+beach_dun2 212 41 C a n c e r
+beach_dun2 107 120 C a n c e r
+beach_dun2 86 32 A q u a r i u s
+beach_dun2 235 168 A q u a r i u s
+beach_dun2 165 196 S c o r p i o
+beach_dun2 125 242 C a n c e r
+beach_dun2 220 45 Tri-Joint
+beach_dun2 96 193 Stalactite Golem
+beach_dun2 149 180 C a n c e r
+beach_dun2 155 24 Tri-Joint
+beach_dun2 153 47 Stalactite Golem
+beach_dun2 172 203 Tri-Joint
+beach_dun2 191 134 Stalactite Golem
+comodo 213 310 BBQ Son
+beach_dun2 100 118 Tri-Joint
+beach_dun2 127 158 S c o r p i o
+beach_dun2 128 130 S c o r p i o
+beach_dun2 264 56 Neraid
+beach_dun2 163 115 S c o r p i o
+beach_dun2 223 83 Stalactite Golem
+beach_dun2 221 176 Stalactite Golem
+beach_dun2 239 176 Tri-Joint
+beach_dun2 63 243 S c o r p i o
+beach_dun2 201 176 C a n c e r
+beach_dun2 267 67 Stalactite Golem
+beach_dun2 38 232 Stalactite Golem
+beach_dun2 156 103 C a n c e r
+beach_dun2 170 95 C a n c e r
+beach_dun2 238 168 C a n c e r
+beach_dun2 73 196 Stalactite Golem
+beach_dun2 258 80 T a u r u s
+beach_dun2 143 47 Stalactite Golem
+beach_dun2 251 68 Stalactite Golem
+beach_dun2 113 240 Stalactite Golem
+beach_dun2 79 39 Stalactite Golem
+beach_dun2 131 248 Stalactite Golem
+beach_dun2 234 43 Stalactite Golem
+beach_dun2 212 40 A q u a r i u s
+beach_dun2 169 36 Tri-Joint
+beach_dun2 204 34 Stalactite Golem
+beach_dun2 262 91 Stalactite Golem
+beach_dun2 229 45 S c o r p i o
+beach_dun2 229 44 Tri-Joint
+beach_dun2 202 141 Stalactite Golem
+beach_dun2 41 243 Stalactite Golem
+beach_dun2 234 50 S c o r p i o
+beach_dun2 85 35 Stalactite Golem
+beach_dun2 50 32 A q u a r i u s
+beach_dun2 98 114 A q u a r i u s
+beach_dun2 236 246 C a n c e r
+beach_dun2 95 48 Stalactite Golem
+beach_dun2 256 165 Stalactite Golem
+beach_dun2 120 117 Stalactite Golem
+beach_dun2 133 114 Stalactite Golem
+beach_dun2 98 198 Stalactite Golem
+beach_dun2 123 191 Stalactite Golem
+beach_dun2 93 146 Stalactite Golem
+beach_dun2 125 121 Stalactite Golem
+beach_dun2 123 128 Stalactite Golem
+beach_dun2 262 97 C a n c e r
+beach_dun2 197 227 Stalactite Golem
+beach_dun2 218 44 Tri-Joint
+beach_dun2 102 142 C a n c e r
+beach_dun2 122 120 A q u a r i u s
+beach_dun2 124 151 C a n c e r
+beach_dun2 165 176 C a n c e r
+beach_dun2 204 40 A q u a r i u s
+beach_dun2 110 43 C a n c e r
+beach_dun2 41 96 Stalactite Golem
+beach_dun2 163 106 S c o r p i o
+beach_dun2 211 184 Stalactite Golem
+beach_dun2 164 100 S c o r p i o
+beach_dun2 147 109 S c o r p i o
+beach_dun2 239 87 Stalactite Golem
+beach_dun2 119 123 Tri-Joint
+beach_dun2 196 40 Stalactite Golem
+beach_dun2 165 44 Stalactite Golem
+beach_dun2 87 142 Tri-Joint
+beach_dun2 167 121 Stalactite Golem
+beach_dun2 253 43 Stalactite Golem
+beach_dun2 213 181 A q u a r i u s
+beach_dun2 166 119 Stalactite Golem
+beach_dun2 230 207 A q u a r i u s
+beach_dun2 111 150 Stalactite Golem
+beach_dun2 147 173 Stalactite Golem
+beach_dun2 215 178 Stalactite Golem
+beach_dun2 259 159 C a n c e r
+beach_dun2 261 149 C a n c e r
+beach_dun2 154 210 Stalactite Golem
+beach_dun2 174 171 A q u a r i u s
+beach_dun2 125 114 Stalactite Golem
+beach_dun2 68 159 Stalactite Golem
+beach_dun2 156 104 A q u a r i u s
+beach_dun2 124 117 C a n c e r
+beach_dun2 182 138 Stalactite Golem
+beach_dun2 119 207 Stalactite Golem
+beach_dun2 81 142 A q u a r i u s
+beach_dun2 191 224 Tri-Joint
+beach_dun2 126 135 Neraid
+beach_dun2 115 44 Stalactite Golem
+beach_dun2 34 87 Stalactite Golem
+beach_dun2 69 250 C a n c e r
+beach_dun2 70 258 Tri-Joint
+beach_dun2 73 260 C a n c e r
+beach_dun2 115 157 C a n c e r
+beach_dun2 190 163 C a n c e r
+beach_dun2 110 146 S c o r p i o
+beach_dun2 35 59 Tri-Joint
+beach_dun2 147 103 S c o r p i o
+beach_dun2 164 116 S c o r p i o
+beach_dun2 236 230 Neraid
+beach_dun2 171 86 Stalactite Golem
+beach_dun2 166 71 C a n c e r
+beach_dun2 177 135 C a n c e r
+beach_dun2 261 55 A q u a r i u s
+beach_dun2 261 72 A q u a r i u s
+beach_dun2 53 161 Stalactite Golem
+beach_dun2 34 57 S c o r p i o
+beach_dun2 99 155 C a n c e r
+beach_dun2 162 175 Tri-Joint
+beach_dun2 203 232 S c o r p i o
+beach_dun2 185 159 C a n c e r
+beach_dun2 165 119 Neraid
+beach_dun2 218 42 A q u a r i u s
+beach_dun2 167 172 Stalactite Golem
+beach_dun2 68 156 C a n c e r
+beach_dun2 160 185 A q u a r i u s
+beach_dun2 111 156 A q u a r i u s
+beach_dun2 142 187 A q u a r i u s
+comodo 209 314 Rotute
+beach_dun2 146 191 Tri-Joint
+beach_dun2 152 168 A q u a r i u s
+comodo 221 310 Rinta
+comodo 221 310 Rinta
+comodo 216 310 BBQ Papa
+alberta_in 32 142 Inn Maid
+alberta_in 22 146 PVP Narrator#pe2
+alberta_in 26 146 Gate Keeper#gke2
+alberta_in 28 145 Grampa
+payon_in01 84 26 Begnahd
+payon_in01 92 31 Repairman#pay
+payon_in01 90 31 Antonio
+payon_in01 81 31 Hakhim
+payon 91 77 RuRumuni
+payon 103 63 Jason
+pay_fild11 90 211 Poporing
+prt_fild05 276 204 Sylar
+xmas_dun02 26 36 Myst Case
+xmas_dun02 186 40 Cruiser
+xmas_dun02 205 30 Christmas Cookie
+xmas_dun02 182 50 Christmas Goblin
+xmas_dun02 188 54 Garm Baby
+xmas_dun02 188 58 Stormy Knight
+xmas_dun02 204 58 Myst Case
+xmas_dun02 160 54 Cruiser
+xmas_dun02 205 65 Christmas Goblin
+xmas_dun02 206 68 Christmas Goblin
+xmas_dun02 207 77 Christmas Goblin
+xmas_dun02 205 68 Christmas Goblin
+alberta 135 79 Tempestra
+geffen 117 37 Cool Event Staff#gef
+geffen 122 37 Kafra Voting Staff#gef
+geffen 118 40 Healer#gef
+geffen 111 48 Womankind
+geffen 118 62 Guide#299
+geffen 116 62 Kafra Corp. Rep.#2
+geffen 120 62 Kafra Employee
+geffen 109 66 Reset Girl#geffen
+geffen 124 72 Job Master#geffen
+geffen 119 107 Smile Assistance#3
+gef_dun01 99 213 Nightmare
+gef_dun01 204 59 Jakk
+gef_dun01 232 57 Drainliar
+gef_dun01 230 71 Drainliar
+gef_dun01 242 210 Zombie
+gef_dun01 107 221 Zombie
+moc_pryd02 44 181 Mummy
+moc_pryd04 105 119 Matyr
+moc_pryd04 74 65 Mimic
+moc_pryd04 61 73 Mummy
+moc_pryd04 30 118 Matyr
+moc_pryd04 30 125 Isis
+moc_pryd04 134 156 Zanaka
+moc_pryd04 170 163 Zanaka
+moc_pryd03 185 146 Mummy
+moc_pryd03 185 138 Matyr
+moc_pryd03 170 126 Verit
+moc_pryd03 186 114 Verit
+moc_pryd03 131 95 Drainliar
+moc_ruins 72 164 Healer#moc
+in_sphinx3 108 34 Marduk
+in_sphinx3 87 34 Matyr
+in_sphinx4 175 33 Minorous
+in_sphinx5 146 98 Pasana
+in_sphinx5 104 134 Marduk
+in_sphinx5 51 162 Marduk
+in_sphinx5 144 175 Pasana
+in_sphinx5 171 169 Marduk
+in_sphinx5 168 93 Pasana
+in_sphinx5 159 53 Matyr
+in_sphinx5 126 43 Sidewinder
+in_sphinx5 52 80 Marduk
+alberta 83 96 Necko#merchant
+gl_cas01 208 48 Dark Frame
+comodo 171 137 Heath
+comodo 164 291 Rakusa
+comodo 169 284 Kichiri
+comodo 163 280 Magatu
+moc_fild15 133 183 Hode
+moc_fild15 116 204 Phreeoni
+pay_fild11 199 143 Poporing
+pay_fild11 91 173 Dragon Tail
+pay_fild11 178 157 Pak Tam
+pay_fild11 137 178 Poison Spore
+pay_fild11 98 193 Zanaka
+pay_fild11 93 192 Pak Tam
+xmas 134 112 Snowman
+xmas_fild01 96 85 Sasquatch
+xmas_fild01 169 188 Sylar
+treasure02 47 72 Kukre
+cmd_in01 164 115 Niles
+cmd_in01 175 120 Iria
+geffen 37 123 Guide#4
+comodo 170 137 Reid
+comodo 226 123 Wandering Bard
+gl_prison1 132 106 Bullet
+alberta 190 173 Phelix
+gl_prison1 145 109 Injustice
+comodo 322 178 Comodo Guide#1
+beach_dun2 210 41 A r i e s
+comodo 274 137 Mari Isac
+beach_dun2 40 92 L i b r a
+beach_dun2 187 117 C a n c e r
+beach_dun2 164 117 C a n c e r
+gonryun 153 64 Gonryun Public Relation
+gonryun 147 84 Tool Dealer#gonryun001
+gonryun 174 101 Weapon Dealer#gonryun00
+gonryun 153 122 Reset Girl#gonryun
+gonryun 156 122 Healer#gon
+gonryun 159 122 Kafra Employee
+gonryun 163 122 Job Master#gonryun
+gonryun 139 142 Girl
+gonryun 166 196 Soldier#gon005
+gon_fild01 187 239 Gonryun Public Relation
+gonryun 173 84 Armor Dealer#gonryun001
+gon_fild01 255 79 Gonryun Public Relation
+gon_fild01 187 239 Gonryun Public Relation
+alberta 245 69 Gonryun Public Relation
+gon_fild01 255 79 Gonryun Public Relation
+alberta 245 69 Gonryun Public Relation
+aldebaran 138 102 Cool Event Staff#alde
+aldebaran 135 118 Healer#alde
+aldebaran 145 102 Kafra Voting Staff#alde
+aldebaran 133 112 Reset Girl#aldebaran
+aldebaran 143 119 Kafra Employee
+aldebaran 146 119 Job Master#aldebaran
+aldebaran 146 124 Town Girl#alde
+c_tower3 10 249 Gatekeeper#ct
+mjolnir_04 333 340 Mantis
+alberta 58 80 Shakir
+mjolnir_02 83 362 Kafra Employee
+mjo_dun03 96 224 Myst
+mjo_dun03 19 51 Skeleton Worker
+aldebaran 136 135 Smile Assistance#2
+aldebaran 143 136 Bell Keeper#A
+mjo_dun03 266 99 Giearth
+mjo_dun03 187 104 Giearth
+izlu2dun 88 174 Healer#izlu2dun
+alberta 248 90 Jornadan Niliria
+mjo_dun03 309 250 Skeleton Worker
+mjo_dun03 292 204 Skeleton Worker
+alberta 245 45 Girl#louyang01199
+c_tower2 152 66 Clock
+gon_dun02 42 115 Grande
+gon_dun02 34 117 Elsen
+gon_dun02 41 127 Harleyquin
+gon_dun02 23 127 Grande
+gon_dun02 28 127 Elsen
+payon 105 116 WOE Information#payon
+payon_in01 66 70 Gate Keeper#gke5
+payon_in01 68 64 PVP Narrator#pe5
+gon_dun02 17 121 Grande
+gon_dun02 16 122 Harleyquin
+gon_dun02 17 122 Elsen
+pay_dun04 192 128 Nine Tail
+aldebaran 121 231 Alchemy Guy#alde
+aldebaran 117 181 Phracon Guy#alde
+gon_dun03 178 223 Evil Snake Lord
+alberta 97 51 Fabian
+pay_fild07 261 265 Elder Willow
+pay_fild07 264 259 Willow
+gon_dun02 43 125 Terminator
+gon_dun02 34 126 Terminator
+pay_fild07 64 319 Elder Willow
+pay_fild07 128 206 Bigfoot
+pay_fild07 200 222 Bigfoot
+gon_dun02 38 130 Harleyquin
+gon_dun02 25 133 Grande
+gon_dun02 22 132 Elsen
+gon_dun02 26 115 Grande
+gon_dun02 26 114 Harleyquin
+gon_dun02 29 124 Elsen
+c_tower2 95 242 Clock
+c_tower2 99 244 Clock
+c_tower2 100 235 Clock
+alde_dun03 264 16 Gatekeeper#ct1
+c_tower2 102 231 Clock
+payg_cas01 233 67 Bright Arbor#6
+payg_cas01 238 67 Bright Arbor#5-2
+payg_cas01 212 108 Bright Arbor#10
+payg_cas01 206 108 Bright Arbor#9
+moc_ruins 107 94 Repairman#moc
+moc_ruins 86 103 Thug#rg
+moc_ruins 97 133 Cool Event Staff#moc
+moc_prydb1 154 128 Alcouskou
+moc_prydb1 39 129 Thief Guide
+pay_fild09 54 68 Bigfoot
+pay_fild09 305 307 Bigfoot
+pay_fild09 171 264 Boa
+pay_fild09 107 261 Bigfoot
+pay_fild09 229 222 Smokie
+pay_fild09 272 104 Boa
+izlude 55 74 Bonne
